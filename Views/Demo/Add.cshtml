@@ -1,0 +1,28 @@
+﻿@model SirmaWebApp.Models.Employee
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    @if (@Model != null)
+    {
+    <table border="1">
+            <thead>
+                <tr>
+                    <th>Employee ID #1</th>
+                    <th>Employee ID #2</th>
+                    <th>Project ID</th>
+                    <th>Days Worked</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.Employee1Id</td>
+                    <td>@Model.Employee2Id</td>
+                    <td>@Model.ProjectId</td>
+                    <td>@Model.WorkDuration</td>
+                </tr>
+            </tbody>
+        </table>
+    }
+    <h1></h1>
+</div>
